@@ -124,18 +124,24 @@ The skill bundles:
   tags, status pips, modals, toggles, cards, inputs, hero/annotation type
   patterns, and the SVG chart patterns.
 
-## Marketplace package
+## Public release package
 
-For Agensi, upload the attached **`tri-swiss-agensi-VERSION.zip`** from
-the GitHub Release, not GitHub's automatic **Source code (zip)** archive.
-The skill archive contains six text files: the skill, theme, component
-reference, house-mark explanation, and both license notices. Repository
-plans, screenshot tools, images, and CI files are deliberately excluded.
+Release CI attaches **`tri-swiss-plugin-VERSION.zip`** and its checksum.
+This seven-file package retains `.claude-plugin/plugin.json`, the native
+`skills/tri-swiss/` layout, the house-mark reference, and license notices.
+Repository plans, demo pages, screenshots, tests, and CI files are excluded.
+Extract it into a plugin directory for local plugin loading; the marketplace
+installation below is unchanged. GitHub's automatic **Source code** archives
+remain full source snapshots and cannot be trimmed by this workflow.
 
-Rebuild it locally with `python scripts/package_agensi.py`; the version is
-read from `.claude-plugin/plugin.json`. The release workflow attaches the
-ZIP and its SHA-256 checksum automatically. Network references and local
-font/chart alternatives are documented in `SKILL.md`.
+Build locally with `python scripts/package_plugin.py`.
+
+## Maintainer packaging
+
+The Agensi submission archive is built locally with
+`python scripts/package_agensi.py`. It is for maintainer upload to Agensi
+and is not attached to public GitHub Releases. The ordinary plugin
+installation below remains unchanged.
 
 ## Install
 

@@ -1,5 +1,25 @@
 # Work log
 
+## 2026-10-24 — Minimal public native-plugin release artifact
+
+- Lux requested slimming normal release artifacts and updating CI in both repos. Added a separate seven-file public plugin builder preserving .claude-plugin/plugin.json, skills/<name>/SKILL.md, theme, component reference, HOUSE-MARK.md, and both original licenses. Unlike the local Agensi ZIP, this keeps native plugin layout and does not flatten or adapt files.
+- Release CI runs native-package tests and publishes only <name>-plugin-VERSION.zip plus checksum. The Agensi builder is never invoked or uploaded. Automatic GitHub Source code archives remain unmodified full snapshots; README explains the distinction and local build command.
+- Verified three native-package regressions per repo (repeatable bytes/allowlist/native layout, missing theme rejection, unexpected skill-path rejection), philosophy compliance, and whitespace checks. Local candidates: 25,139 bytes. No new version tag or release requested for this CI change; next tagged release will attach the public native artifact.
+- Extending PR #21; Lux explicitly approved administrator bypass for this PR. Public Agensi assets have already been deleted; verified local copies retained. Files: scripts/package_plugin.py, scripts/test_package_plugin.py, .github/workflows/release.yml, README.md, CHANGELOG.md, JOURNAL.md.
+
+## 2026-10-24 — Keep Agensi submission packages out of public releases
+
+- Lux explicitly requested deletion of public Agensi build outputs. Removed the ZIP and checksum release assets, retaining verified copies in the task's local release-assets folders. Removed the marketplace build/test/upload step from Release CI; ordinary changelog-based release creation remains.
+- Corrected README and release changelog wording so they no longer offer marketplace packages as public assets. Local packaging tools remain available for maintainer uploads. No source-archive, version-tag, native plugin, or Agensi listing deletion.
+- Verified the workflow has no marketplace-builder invocation or release-upload command, while the normal release-create/edit path remains. Whitespace checks pass. Preparing a corrective PR; release-page notes will be refreshed from the corrected version section. No new version tag required.
+- Files: .github/workflows/release.yml, README.md, CHANGELOG.md, JOURNAL.md.
+
+## 2026-10-24 — v1.3.0 published by Release CI
+
+- User explicitly approved administrator bypass for release PR #20 and CI publication. PR merged at 90062045e25e914a003915aed85a59e68d2e77fb; signed annotated tag v1.3.0 pushed at that commit. Initial tag creation opened an interactive editor due to tag.gpgSign; interrupted it and supplied an explicit tag message without disabling signing.
+- Existing Release workflow run 40118482286 succeeded and published v1.3.0 with tri-swiss-agensi-1.3.0.zip and its SHA-256 file. No manual release publication used. Source archives remain full-repository archives; upload the attached Agensi ZIP instead.
+- Downloaded release assets to ../tri-swiss-release-assets for checksum/content verification. Agensi resubmission and their scanner result remain pending. This post-release audit entry is local only; no source changes after publication.
+
 ## 2026-10-24 — Agensi artifact boundary and v1.3.0 preparation
 
 - Diagnosed the submitted release source archive: the supplied vault path was absent, but Downloads/tri-swiss-1.2.0.zip contains the reported 64 files and matching flagged lines; SHA256 a14aa93e004efbf95fc30874e1024ba48d4067989cb84864bac3b8a40535799e. Line 1428 is a palette div with data-token=background, not a credential. The fs.writeFileSync reference at line 1887 is a development validator mutation in a Markdown plan. Kept planning history; excluded repository internals from the installed artifact.
