@@ -6,11 +6,20 @@ All notable changes to this plugin are documented here. Format follows
 
 ## [Unreleased]
 
+## [1.3.0] — 2026-10-24
+
 ### Added
+- A six-file Agensi skill archive and SHA-256 checksum attached to releases,
+  built from an explicit allowlist by `scripts/package_agensi.py`.
+- Skill frontmatter tags and explicit documentation of external references,
+  browser font/chart requests, and locally hosted alternatives.
 - A disabled Coming soon on Agensi action while the listing awaits approval.
 - An optional Buy Me a Coffee action in a support callout beneath installation, explicitly retaining Tri-Swiss's free and open-source availability.
 
 ### Changed
+- Marketplace submission instructions distinguish the installable skill ZIP
+  from GitHub's full-source archive. Planning history remains in the repo;
+  it is not part of the installable skill.
 - Added a spare-time aside to explain the optional support request.
 
 ## [1.2.0] — 2026-09-30
