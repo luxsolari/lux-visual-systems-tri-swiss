@@ -6,6 +6,8 @@ All notable changes to this plugin are documented here. Format follows
 
 ## [Unreleased]
 
+## [1.3.1] — 2026-10-24
+
 ### Added
 - A minimal public native-plugin ZIP and checksum built by Release CI,
   preserving the manifest and skill layout; Agensi packages remain local-only.
