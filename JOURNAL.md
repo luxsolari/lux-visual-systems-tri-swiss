@@ -1,5 +1,21 @@
 # Work log
 
+## 2026-10-24 — Agensi artifact boundary and v1.3.0 preparation
+
+- Diagnosed the submitted release source archive: the supplied vault path was absent, but Downloads/tri-swiss-1.2.0.zip contains the reported 64 files and matching flagged lines; SHA256 a14aa93e004efbf95fc30874e1024ba48d4067989cb84864bac3b8a40535799e. Line 1428 is a palette div with data-token=background, not a credential. The fs.writeFileSync reference at line 1887 is a development validator mutation in a Markdown plan. Kept planning history; excluded repository internals from the installed artifact.
+- Added deterministic six-file packaging (SKILL.md, assets/theme.css, references/components.md, HOUSE-MARK.md, LICENSE, LICENSE-DESIGN), root skill frontmatter tags, endpoint-purpose disclosure with local font/chart alternatives, and README upload guidance. Original license notices are preserved with a flattened-distribution scope clarification. No design behavior changed.
+- Extended the existing Release CI workflow, not a competing publisher: check out the requested tag, validate manifest/tag agreement, run package tests, build ZIP, then attach ZIP and checksum to the normal changelog-based release. User explicitly requested CI publication and v1.3.0; bump suggester independently recommends minor from v1.2.0. Manifest and demo footer versions synchronized; changelog prepared for 2026-10-24.
+- Verified packaging runs locally: six text files, 24,362 bytes; source theme/reference payload retained. Three regression tests pass outside the sandbox (deterministic allowlist excluding unrelated files, rejecting missing relative references, rejecting credential-shaped payload). Sandbox temp-directory permissions initially prevented tests; no test weakening. Philosophy checker and whitespace check pass. No claim that Agensi's unpublished scanner will accept it.
+- Open: release branch must land through a PR before tagging; CI must publish and attach the assets. No Agensi resubmission performed. The v1.2.0 release has no attached assets; its automatically generated full-source ZIP is not the marketplace artifact.
+- Files: scripts/package_agensi.py, scripts/test_package_agensi.py, skills/tri-swiss/SKILL.md, .github/workflows/release.yml, README.md, CHANGELOG.md, .claude-plugin/plugin.json, docs/*.html, .gitignore, JOURNAL.md.
+
+## 2026-10-24 — Approved merge and public verification
+
+- Lux explicitly requested all three PRs be merged and made live. This repository's merge commit: 23f67982c3524ac6ea4fb5d06b7e1748bbfc1ece.
+- Regular merge was blocked by a required approving review in ruleset 18592154. Lux explicitly approved administrator bypass in chat; merged with --admin without changing repository rules. Browser verified the public support callout, joke, coffee action, and disabled Coming soon on Agensi button.
+- Public verification was desktop/browser content and link inspection, not a new full test or mobile run. Tri-Swiss listing approval remains pending; no purchase URL or price was fabricated.
+- This post-release audit entry is local only to avoid another publication cycle for log-only changes. No source changes after merge. Files: JOURNAL.md.
+
 ## 2026-10-24 — Review branches for pending Tri-Swiss listing
 
 - Lux requested PR preparation and Coming soon on Agensi actions on the Tri-Swiss project card and demo while approval is pending. Used disabled native buttons without destination or price, retaining existing free access and coffee actions. Published the previously approved spare-time demo copy for review as well.
