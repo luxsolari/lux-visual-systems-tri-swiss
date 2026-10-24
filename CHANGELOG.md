@@ -6,11 +6,15 @@ All notable changes to this plugin are documented here. Format follows
 
 ## [Unreleased]
 
+### Fixed
+- Removed Agensi submission artifacts from public release automation;
+  marketplace packages are built locally for maintainer upload only.
+
 ## [1.3.0] — 2026-10-24
 
 ### Added
-- A six-file Agensi skill archive and SHA-256 checksum attached to releases,
-  built from an explicit allowlist by `scripts/package_agensi.py`.
+- A local maintainer packaging tool for Agensi submissions, built from
+  an explicit allowlist by `scripts/package_agensi.py`.
 - Skill frontmatter tags and explicit documentation of external references,
   browser font/chart requests, and locally hosted alternatives.
 - A disabled Coming soon on Agensi action while the listing awaits approval.
