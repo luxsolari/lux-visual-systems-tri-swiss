@@ -6,6 +6,13 @@ All notable changes to this plugin are documented here. Format follows
 
 ## [Unreleased]
 
+### Added
+- A disabled Coming soon on Agensi action while the listing awaits approval.
+- An optional Buy Me a Coffee action in a support callout beneath installation, explicitly retaining Tri-Swiss's free and open-source availability.
+
+### Changed
+- Added a spare-time aside to explain the optional support request.
+
 ## [1.2.0] — 2026-09-30
 
 ### Added
