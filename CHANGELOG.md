@@ -6,6 +6,10 @@ All notable changes to this plugin are documented here. Format follows
 
 ## [Unreleased]
 
+### Changed
+- Activated the verified Tri-Swiss Agensi purchase link in the installation
+  support callout after listing approval.
+
 ## [1.3.1] — 2026-10-24
 
 ### Added

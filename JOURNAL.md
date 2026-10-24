@@ -1,5 +1,18 @@
 # Work log
 
+## 2026-10-24 — Activate approved Tri-Swiss Agensi listing
+
+- Lux confirmed both skills are live and supplied https://www.agensi.io/skills/tri-swiss-design-system-plugin. Browser verified both Agensi listings have active Buy skill actions priced $4.99. Agensi search returned no matches, so no URL was guessed.
+- Replaced Tri-Swiss's pending action with Buy on Agensi · $4.99 in its installation support callout, updating the sentence to mention purchasing as optional support. Existing coffee destination, free/open-source notice, and spare-time joke are preserved. Public Lux Swiss demo already has its correct purchase and coffee actions; no source edit needed there.
+- Tri-Swiss philosophy compliance and whitespace checks passed. Scope is listing links/copy only; no new full build or test suite. Preparing a review PR, no merge/deployment yet.
+- Files: docs/index.html, CHANGELOG.md, JOURNAL.md.
+
+## 2026-10-24 — v1.3.1 release and local Agensi package delivered
+
+- Merged release PR #22 with Lux's explicitly approved bypass and pushed the signed v1.3.1 tag. Existing Release CI run 40122340420 succeeded, publishing only the native plugin ZIP and checksum. Checked public asset names: no Agensi submission artifacts.
+- Downloaded public ZIP verified against its checksum and seven-file native manifest/skill layout. Separately copied the six-file Agensi ZIP/checksum into ../agensi-upload-packages and verified its checksum locally. No Agensi upload, no public Agensi attachment, and no new temporary PR-description files in workspace or tracked repositories.
+- This post-release audit entry remains local only. Files: JOURNAL.md.
+
 ## 2026-10-24 — Release 1.3.1 with separated artifacts
 
 - Lux requested new releases via existing CI, explicitly authorizing administrator bypass where needed, and local Agensi packages. Bump script derived v1.3.1; synchronized manifest, changelog, and demo footer version labels.
