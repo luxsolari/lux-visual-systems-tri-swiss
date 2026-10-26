@@ -208,7 +208,7 @@ requires a capable host; Agensi text delivery
 does not make packaged PNG pixels visible to an agent.
 
 See the [edition comparison](https://luxsolari.github.io/lux-visual-systems-tri-swiss/#editions)
-and the [Agensi listing](https://www.agensi.io/skills/lux-visual-systems-tri-swiss).
+and the [Agensi listing](https://www.agensi.io/skills/lux-visual-systems-tri-swiss-supporter-edition).
 
 You can support the work either by buying the Supporter Edition for its additional
 workflow, or by [leaving an optional coffee](https://buymeacoffee.com/lux.solari)
