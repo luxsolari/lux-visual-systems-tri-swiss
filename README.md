@@ -1,27 +1,27 @@
-# Tri-Swiss
+# Lux Visual Systems - Tri-Swiss
 
-[![Version](https://img.shields.io/github/v/release/luxsolari/tri-swiss)](https://github.com/luxsolari/tri-swiss/releases)
+[![Version](https://img.shields.io/github/v/release/luxsolari/lux-visual-systems-tri-swiss)](https://github.com/luxsolari/lux-visual-systems-tri-swiss/releases)
 [![License: MIT/X11](https://img.shields.io/badge/license-MIT%2FX11-blue.svg)](LICENSE)
 [![Design: CC BY-SA 4.0](https://img.shields.io/badge/design-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE-DESIGN)
 
 <p align="center">
-  <a href="https://luxsolari.github.io/tri-swiss/">
+  <a href="https://luxsolari.github.io/lux-visual-systems-tri-swiss/">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.png" />
-      <img src="docs/assets/banner-light.png" alt="Tri-Swiss — two colors, one accent, one genuine third" width="960" />
+      <img src="docs/assets/banner-light.png" alt="Lux Visual Systems - Tri-Swiss — two colors, one accent, one genuine third" width="960" />
     </picture>
   </a>
 </p>
 
-<p align="center"><strong><a href="https://luxsolari.github.io/tri-swiss/">Showcase and documentation →</a></strong></p>
+<p align="center"><strong><a href="https://luxsolari.github.io/lux-visual-systems-tri-swiss/">Showcase and documentation →</a></strong></p>
 
-A Claude Code plugin that teaches Claude **Tri-Swiss** — Lux Solari's
+A Claude Code plugin that teaches Claude **Lux Visual Systems - Tri-Swiss** — Lux Solari's
 house design language, sibling to
-[Lux Swiss](https://github.com/luxsolari/lux-swiss) (formerly Duotone
+[Lux Visual Systems - Lux Swiss](https://github.com/luxsolari/lux-visual-systems-lux-swiss) (formerly Duotone
 Swiss) — so every project you build shares one consistent, opinionated
 aesthetic.
 
-Tri-Swiss and Lux Swiss are the two house-mark design systems that carry
+Lux Visual Systems - Tri-Swiss and Lux Visual Systems - Lux Swiss are the two house-mark design systems that carry
 Lux Solari's personal brand identity into every project built with them —
 related governance, distinct palettes. See [HOUSE-MARK.md](HOUSE-MARK.md)
 for how the two relate.
@@ -66,22 +66,22 @@ meaning outside its two named hover exceptions, however often it recurs.
 
 ## See it
 
-[luxsolari.github.io/tri-swiss](https://luxsolari.github.io/tri-swiss/) is both
+[luxsolari.github.io/lux-visual-systems-tri-swiss](https://luxsolari.github.io/lux-visual-systems-tri-swiss/) is both
 the showcase and the documentation. Its sidebar is Red's Structural Block,
 its Overview ends in Turquoise's, and every demo on it is plain HTML on the
 tokens:
 
 | Page | What it documents |
 |------|-------------------|
-| [Overview](https://luxsolari.github.io/tri-swiss/) | The banner, the two governing rules, how to use the system, the do-not list, the Turquoise moment and closing band |
-| [Colors](https://luxsolari.github.io/tri-swiss/colors.html) | Fifteen semantic tokens in both themes, Red's jobs, Turquoise's jobs, the three guardrails, measured contrast |
-| [Typography](https://luxsolari.github.io/tri-swiss/typography.html) | Three roles, the Space/Geist flavors, the weight axis, the heading scale, labels, Jost |
-| [Spacing](https://luxsolari.github.io/tri-swiss/spacing.html) | Spacing steps, the one radius, fixed sizes including Turquoise's caps, opacity states |
-| [Components](https://luxsolari.github.io/tri-swiss/components.html) | Nineteen patterns with live demos and guidelines |
-| [Structural Block](https://luxsolari.github.io/tri-swiss/structural-block.html) | Sidebar, hero band, bold word, the tri-part stripe, the hover hierarchy |
-| [Highlight](https://luxsolari.github.io/tri-swiss/highlight.html) | The Turquoise token: sanctioned uses, its own block, the dual-accent exception |
-| [Charts](https://luxsolari.github.io/tri-swiss/charts.html) | Hand-rolled SVG, the governed third line, restyled Observable Plot |
-| [House Mark](https://luxsolari.github.io/tri-swiss/house-mark.html) | How Tri-Swiss and Lux Swiss relate |
+| [Overview](https://luxsolari.github.io/lux-visual-systems-tri-swiss/) | The banner, the two governing rules, how to use the system, the do-not list, the Turquoise moment and closing band |
+| [Colors](https://luxsolari.github.io/lux-visual-systems-tri-swiss/colors.html) | Fifteen semantic tokens in both themes, Red's jobs, Turquoise's jobs, the three guardrails, measured contrast |
+| [Typography](https://luxsolari.github.io/lux-visual-systems-tri-swiss/typography.html) | Three roles, the Space/Geist flavors, the weight axis, the heading scale, labels, Jost |
+| [Spacing](https://luxsolari.github.io/lux-visual-systems-tri-swiss/spacing.html) | Spacing steps, the one radius, fixed sizes including Turquoise's caps, opacity states |
+| [Components](https://luxsolari.github.io/lux-visual-systems-tri-swiss/components.html) | Nineteen patterns with live demos and guidelines |
+| [Structural Block](https://luxsolari.github.io/lux-visual-systems-tri-swiss/structural-block.html) | Sidebar, hero band, bold word, the tri-part stripe, the hover hierarchy |
+| [Highlight](https://luxsolari.github.io/lux-visual-systems-tri-swiss/highlight.html) | The Turquoise token: sanctioned uses, its own block, the dual-accent exception |
+| [Charts](https://luxsolari.github.io/lux-visual-systems-tri-swiss/charts.html) | Hand-rolled SVG, the governed third line, restyled Observable Plot |
+| [House Mark](https://luxsolari.github.io/lux-visual-systems-tri-swiss/house-mark.html) | How Lux Visual Systems - Tri-Swiss and Lux Visual Systems - Lux Swiss relate |
 
 The site is static HTML under `docs/`, served by GitHub Pages: `docs/assets/site.css`
 holds the tokens and every pattern, `docs/assets/site.js` the theme, flavor and Jost
@@ -109,11 +109,11 @@ Turquoise's own Structural Block — a genuine third color, not an occasional ac
 
 ## What it does
 
-Once installed, the `tri-swiss` skill activates automatically whenever
+Once installed, the `lux-visual-systems-tri-swiss` skill activates automatically whenever
 Claude builds or restyles UI — components, pages, forms, dashboards,
 Tailwind/CSS themes — and applies these tokens and patterns by default,
 even if you don't name the design system. You can also invoke it explicitly
-("apply my design system", "make this tri-swiss", "use the tri-tone system").
+("apply my design system", "make this lux-visual-systems-tri-swiss", "use the tri-tone system").
 
 The skill bundles:
 
@@ -126,9 +126,9 @@ The skill bundles:
 
 ## Public release package
 
-Release CI attaches **`tri-swiss-plugin-VERSION.zip`** and its checksum.
+Release CI attaches **`lux-visual-systems-tri-swiss-plugin-VERSION.zip`** and its checksum.
 This seven-file package retains `.claude-plugin/plugin.json`, the native
-`skills/tri-swiss/` layout, the house-mark reference, and license notices.
+`skills/lux-visual-systems-tri-swiss/` layout, the house-mark reference, and license notices.
 Repository plans, demo pages, screenshots, tests, and CI files are excluded.
 Extract it into a plugin directory for local plugin loading; the marketplace
 installation below is unchanged. GitHub's automatic **Source code** archives
@@ -149,7 +149,7 @@ Add the marketplace, then install:
 
 ```
 /plugin marketplace add luxsolari/lux-solari-plugins
-/plugin install tri-swiss
+/plugin install lux-visual-systems-tri-swiss
 ```
 
 ## Applying it to a project
@@ -174,7 +174,7 @@ Dark mode is the `.dark` class on `<html>`, toggled via JS and persisted to
 
 This repository is dual-licensed:
 
-- **The design system itself** (`skills/tri-swiss/`, `docs/index.html`,
+- **The design system itself** (`skills/lux-visual-systems-tri-swiss/`, `docs/index.html`,
   `docs/assets/`, [HOUSE-MARK.md](HOUSE-MARK.md)) — CC BY-SA 4.0 © 2026
   Lux Solari (Luciano Laje). Free to use and adapt, including
   commercially, provided you credit Lux Solari and license your
@@ -182,3 +182,18 @@ This repository is dual-licensed:
 - **Everything else** (build/tooling scripts, CI config, git hooks, and
   project documentation such as this README) — MIT/X11 © 2026 Lux
   Solari (Luciano Laje). See [LICENSE](LICENSE).
+
+## Naming migration
+
+This member of the Lux Visual Systems family now uses `lux-visual-systems-tri-swiss`
+as its repository, installation identifier, skill name and command namespace.
+It replaces the previous `tri-swiss` identifier. Reinstall/select the renamed
+package and update explicit invocations; existing installations do not rename
+themselves. Previous releases and historical records retain their original names.
+The design rules, licensed assets and repository visibility are unchanged.
+
+### Install from the shared Claude marketplace
+
+```text
+/plugin install lux-visual-systems-tri-swiss --marketplace luxsolari/lux-solari-plugins
+```

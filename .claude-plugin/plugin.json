@@ -1,13 +1,13 @@
 {
-  "name": "tri-swiss",
+  "name": "lux-visual-systems-tri-swiss",
   "version": "1.3.1",
-  "description": "Tri-Swiss — a tri-tone (ink + cream + Swiss Red + Pastel Turquoise highlight) Swiss-minimalist design system, sharing its Space Mono/Space Grotesk typography core (Geist Mono/Geist Sans flavor available) with sibling lux-swiss (Lux Swiss, formerly Duotone Swiss); same governance, different palette.",
+  "description": "Lux Visual Systems - Tri-Swiss — a tri-tone (ink + cream + Swiss Red + Pastel Turquoise highlight) Swiss-minimalist design system, sharing its Space Mono/Space Grotesk typography core (Geist Mono/Geist Sans flavor available) with sibling lux-visual-systems-lux-swiss (Lux Visual Systems - Lux Swiss, formerly Duotone Swiss); same governance, different palette.",
   "author": {
     "name": "Lux Solari",
     "email": "luxsolari@outlook.com",
     "url": "https://github.com/luxsolari"
   },
-  "repository": "https://github.com/luxsolari/tri-swiss",
+  "repository": "https://github.com/luxsolari/lux-visual-systems-tri-swiss",
   "license": "CC-BY-SA-4.0",
   "keywords": [
     "design-system",

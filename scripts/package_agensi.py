@@ -9,9 +9,9 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 FILES = {
-    "SKILL.md": "skills/tri-swiss/SKILL.md",
-    "assets/theme.css": "skills/tri-swiss/assets/theme.css",
-    "references/components.md": "skills/tri-swiss/references/components.md",
+    "SKILL.md": "skills/lux-visual-systems-tri-swiss/SKILL.md",
+    "assets/theme.css": "skills/lux-visual-systems-tri-swiss/assets/theme.css",
+    "references/components.md": "skills/lux-visual-systems-tri-swiss/references/components.md",
     "HOUSE-MARK.md": "HOUSE-MARK.md",
     "LICENSE": "LICENSE",
     "LICENSE-DESIGN": "LICENSE-DESIGN",
@@ -34,7 +34,7 @@ def build(output_dir: Path) -> Path:
         if target in ("LICENSE", "LICENSE-DESIGN"):
             text = (
                 "Distribution scope: SKILL.md, assets/, references/, and HOUSE-MARK.md\n"
-                "are design content relocated from skills/tri-swiss/ and HOUSE-MARK.md\n"
+                "are design content relocated from skills/lux-visual-systems-tri-swiss/ and HOUSE-MARK.md\n"
                 "in the source repository, under CC BY-SA 4.0. The original repository\n"
                 "license notice follows unchanged.\n\n" + text
             )
@@ -57,7 +57,7 @@ def build(output_dir: Path) -> Path:
                     raise ValueError(f"Unresolved local reference in {target}: {local}")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    archive = output_dir / f"tri-swiss-agensi-{version}.zip"
+    archive = output_dir / f"lux-visual-systems-tri-swiss-agensi-{version}.zip"
     with ZipFile(archive, "w", compression=ZIP_DEFLATED) as bundle:
         for name, data in sorted(contents.items()):
             info = ZipInfo(name, date_time=(2020, 1, 1, 0, 0, 0))
