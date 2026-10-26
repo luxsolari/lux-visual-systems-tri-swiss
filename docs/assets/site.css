@@ -1,7 +1,7 @@
-/* Tri-Swiss — documentation site stylesheet.
- * Tokens mirror skills/tri-swiss/assets/theme.css exactly; keep them in sync.
+/* Lux Visual Systems - Tri-Swiss — documentation site stylesheet.
+ * Tokens mirror skills/lux-visual-systems-tri-swiss/assets/theme.css exactly; keep them in sync.
  * Everything below the token blocks is the showcase/documentation chrome and the
- * component patterns documented in skills/tri-swiss/references/components.md. */
+ * component patterns documented in skills/lux-visual-systems-tri-swiss/references/components.md. */
 
 :root {
   --background:#f5efe0; --foreground:#000000; --card:#faf6ec; --card-foreground:#000000;

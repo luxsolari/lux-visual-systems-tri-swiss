@@ -1,5 +1,13 @@
 # Work log
 
+## 2026-10-26 — Unify the Lux Visual Systems family
+
+- Changed active branding, repository/install identifiers and explicit skill/command references to the three owner-approved family names. Preserved historical changelog/journal entries, source snapshots, licenses, binary assets and version numbers. Source identifiers are a breaking migration; users must select/reinstall the new package.
+- Site scope is project cards and their repository/demo links, plus an explicitly private Image Direction card without a private repository URL or a commercial availability claim.
+- Verified locally: both six-test package suites and philosophy checks, 16 Codex catalogue tests and renamed package validators, 131 Hermes Python tests, eight image-library/contract tests and the Claude marketplace regression passed in UTF-8 with canonical Git line endings. Hosted PR CI and final remote links remain pending. No new release tag or version is invented.
+- Open: checked PRs, remote repository renames, Pages URLs and installed/private-vault migration. Do not infer deployment from local edits.
+- Ruled out: rewriting old releases/provenance and changing repository visibility or licenses. Relevant files: manifests, SKILL.md, package paths, README/docs, catalogues/validators and site lib/projects.ts where present.
+
 ## 2026-10-24 — Activate approved Tri-Swiss Agensi listing
 
 - Lux confirmed both skills are live and supplied https://www.agensi.io/skills/tri-swiss-design-system-plugin. Browser verified both Agensi listings have active Buy skill actions priced $4.99. Agensi search returned no matches, so no URL was guessed.

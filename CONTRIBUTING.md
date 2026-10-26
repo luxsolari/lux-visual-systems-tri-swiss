@@ -3,7 +3,7 @@
 Contributions welcome! Here's how:
 
 ## Design changes
-The design language lives in `skills/tri-swiss/`. Keep the two governing
+The design language lives in `skills/lux-visual-systems-tri-swiss/`. Keep the two governing
 rules intact — **tri-tone, more colorful** (two structural colors + one
 accent, Swiss Red, used more freely for action/divider/emphasis-border/
 Structural-Block/hover-signal jobs + one non-semantic highlight, Pastel
@@ -41,7 +41,7 @@ version.
 
 ## License
 This repo is dual-licensed (see [README.md](README.md#license)):
-contributions to `skills/tri-swiss/`, `docs/index.html`, `docs/assets/`,
+contributions to `skills/lux-visual-systems-tri-swiss/`, `docs/index.html`, `docs/assets/`,
 or `HOUSE-MARK.md` are accepted under CC BY-SA 4.0; contributions to
 `scripts/` or other tooling are accepted under MIT/X11.
 

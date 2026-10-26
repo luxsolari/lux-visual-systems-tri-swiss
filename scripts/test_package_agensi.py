@@ -39,14 +39,14 @@ class PackageTests(unittest.TestCase):
             self.assertIsNone(bundle.testzip())
 
     def test_missing_reference_rejects_package(self):
-        skill = self.root / "skills/tri-swiss/SKILL.md"
+        skill = self.root / "skills/lux-visual-systems-tri-swiss/SKILL.md"
         with skill.open("a", encoding="utf-8") as stream:
             stream.write("\n[Missing](references/missing.md)\n")
         with self.assertRaisesRegex(ValueError, "Unresolved local reference"):
             self.build()
 
     def test_credential_shaped_content_rejects_package(self):
-        theme = self.root / "skills/tri-swiss/assets/theme.css"
+        theme = self.root / "skills/lux-visual-systems-tri-swiss/assets/theme.css"
         with theme.open("a", encoding="utf-8") as stream:
             stream.write("\n/* " + "ghp_" + "X" * 36 + " */\n")
         with self.assertRaisesRegex(ValueError, "Credential-shaped material"):
